@@ -1,13 +1,108 @@
-body {
+/*  *----------------------------------------------------------*
+    * Import *
+*-------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Stylish&display=swap");
+
+/*  *----------------------------------------------------------*
+    * Basic styles *
+*-------------------- */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/*  *----------------------------------------------------------*
+    * Utility classes *
+*-------------------- */
+
+/* * ---------- Layout ---------- * */
+.hiden {
+  display: none;
+}
+.container {
+  max-width: 1280px;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-around;
+}
+.gap-2 {
+  gap: 20px;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+/* * ---------- Typography ---------- * */
+.text-center {
+  text-align: center !important;
+}
+.decoration-none {
+  text-decoration: none;
+}
+.text-white {
+  color: #fff;
+}
+/* * ---------- Spacing ---------- * */
+.w-full {
+  width: 100%;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+/* * ---------- Warning ---------- * */
+.input-error-warning {
+  border: 1px solid red !important;
+}
+.input-error-warning::placeholder {
+  color: #f52b11 !important;
+}
+/* * ---------- Components ---------- * */
+.btn,
+.btn-inverse,
+.btn-gbwt {
+  background-color: #f52b11;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-gbwt {
+  background-color: #fff;
+  color: #222;
+}
+.btn:hover,
+.btn-gbwt:hover,
+.btn-inverse:hover {
+  transform: scale(1.05);
+}
+.btn-inverse {
+  background-color: transparent;
+  border: 1.5px solid #f52b11;
+  transition: all 0.3s ease-in-out;
 }

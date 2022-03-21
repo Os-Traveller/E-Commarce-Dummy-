@@ -1,0 +1,26 @@
+.Nav-section {
+  background-color: #2435a1;
+}
+.Nav-container {
+  color: #fff;
+}
+.Nav-container > h1 {
+  font-family: "Stylish", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+.Nav-container > ul {
+  list-style: none;
+  gap: 20px;
+}
+.Nav-container > ul > li {
+  transition: all 0.3s ease-in-out;
+  padding-top: 1px;
+  border-bottom: 1px solid transparent;
+}
+.Nav-container > ul > li:hover {
+  border-color: #fff;
+}
+.Nav-selected {
+  border-color: #fff;
+}

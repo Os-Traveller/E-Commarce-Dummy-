@@ -1,0 +1,12 @@
+.Herobox-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 40px;
+}
+.Herobox-container > h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}

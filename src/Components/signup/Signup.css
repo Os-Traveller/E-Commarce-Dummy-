@@ -1,0 +1,57 @@
+.Signup-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.Signup-container {
+  padding: 20px 100px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+  align-items: center;
+}
+.Signup-container > img {
+  width: 100%;
+}
+.Signup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 0, 60% 0%, 50% 100%, 0 100%);
+  background-color: #f52b11;
+  height: 100%;
+}
+.Signup-form {
+  width: 80%;
+  margin-left: auto;
+  text-align: center;
+}
+.Signup-form > img {
+  width: 15%;
+  margin: 0 auto;
+}
+.Signup-form > h2 {
+  margin-bottom: 30px;
+}
+.Signup-form input {
+  height: 40px;
+  padding: 5px 15px;
+  background-color: #f2f3f7;
+  border: none;
+  outline: none;
+}
+.Signup-form input::placeholder {
+  color: #222;
+}
+.Signup-form label {
+  color: #4b964c;
+}
+.Signup-form label > span {
+  color: #777;
+}
+.Signup-form > button {
+  font-size: 18px;
+  font-weight: 300;
+}

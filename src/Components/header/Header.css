@@ -1,0 +1,8 @@
+.Header-container {
+  position: relative;
+  background-color: #2435a1;
+  color: #fff;
+  min-height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 97% 92%, 50% 99%, 3% 92%);
+  padding: 10px;
+}

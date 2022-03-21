@@ -1,0 +1,11 @@
+.SuccessSignup-container {
+  position: relative;
+  background-color: #2ecc71;
+  color: #fff;
+  min-height: 100vh;
+  clip-path: polygon(3% 0%, 97% 0%, 100% 100%, 50% 92%, 0% 100%);
+  padding: 10px;
+}
+.SuccessSignup-container h1 {
+  font-weight: 300;
+}
