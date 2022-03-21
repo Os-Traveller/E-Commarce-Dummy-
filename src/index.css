@@ -82,7 +82,8 @@ body {
 /* * ---------- Components ---------- * */
 .btn,
 .btn-inverse,
-.btn-gbwt {
+.btn-gbwt,
+.btn-gb {
   background-color: #f52b11;
   text-decoration: none;
   font-weight: 700;
@@ -91,6 +92,9 @@ body {
   border: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+}
+.btn-gb {
+  background-color: #2ecc71;
 }
 .btn-gbwt {
   background-color: #fff;

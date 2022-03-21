@@ -76,7 +76,6 @@ export default function Signup() {
     if (!isUserNameUnique) setUserName("");
 
     if (passMatch && uniqueEmail && uniqueUsername) {
-      console.log("It works");
       allClear();
       path("/success");
     }
@@ -98,13 +97,6 @@ export default function Signup() {
           <input className={isEmailUnique ? "" : "input-error-warning"} type="email" placeholder={isEmailUnique ? "Email" : "This email is already taken"} value={email} onChange={emailHandler} required />
           <input type="password" placeholder="Password" value={password} onChange={passwordHandler} required />
           <input className={isPassMatched ? "" : "input-error-warning"} type="password" placeholder={isPassMatched ? "Confirm Password" : "Password did not match"} value={confirmPass} onChange={confirmPassHandler} required />
-          <div className="flex items-center gap-2">
-            <input type="checkbox" name="" id="checkbox" />
-            <label htmlFor="checkbox">
-              <span>I accept the</span> Term and Condition
-            </label>
-          </div>
-
           <button className="btn">Signup</button>
         </form>
       </div>

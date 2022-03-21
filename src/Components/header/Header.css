@@ -1,5 +1,5 @@
 .Header-container {
-  position: relative;
+  display: grid;
   background-color: #2435a1;
   color: #fff;
   min-height: 100vh;

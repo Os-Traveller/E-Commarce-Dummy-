@@ -1,0 +1,57 @@
+.Login-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.Login-container {
+  padding: 20px 100px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+  align-items: center;
+}
+.Login-container > img {
+  width: 100%;
+}
+.Login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 0, 50% 0%, 60% 100%, 0 100%);
+  background-color: #2ecc71;
+  height: 100%;
+}
+.Login-form {
+  width: 80%;
+  margin-left: auto;
+  text-align: center;
+}
+.Login-form > img {
+  width: 15%;
+  margin: 0 auto;
+}
+.Login-form > h2 {
+  margin-bottom: 30px;
+}
+.Login-form input {
+  height: 40px;
+  padding: 5px 15px;
+  background-color: #f2f3f7;
+  border: none;
+  outline: none;
+}
+.Login-form input::placeholder {
+  color: #222;
+}
+.Login-form label {
+  color: #4b964c;
+}
+.Login-form label > span {
+  color: #777;
+}
+.Login-form > button {
+  font-size: 18px;
+  font-weight: 300;
+}
